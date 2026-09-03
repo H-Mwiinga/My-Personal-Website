@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal website for Haangoma Mwiinga - HTML assignment">
+  <title>Haangoma Mwiinga — Personal Website</title>
+</head>
+<body>
+  <header id="site-header">
+    <h1>Haangoma Mwiinga</h1>
+    <p class="tagline">Web developer student • Portfolio &amp; contact</p>
+    <nav role="navigation" aria-label="Primary navigation">
+      <ul>
+        <li><a href="#about" title="About section">About</a></li>
+        <li><a href="#portfolio" title="Portfolio section">Portfolio</a></li>
+        <li><a href="#resume" title="Resume section">Resume</a></li>
+        <li><a href="#contact" title="Contact section">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="about" class="section about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <p>I am a web development student learning semantic HTML and best practices.</p>
+      <figure>
+        <img src="https://via.placeholder.com/140" alt="Profile placeholder" width="140" height="140">
+        <figcaption>Profile photo (placeholder)</figcaption>
+      </figure>
+      <dl>
+        <dt>Location</dt>
+        <dd>Monze, Zambia</dd>
+        <dt>Availability</dt>
+        <dd>Open to internships</dd>
+      </dl>
+      <hr>
+    </section>
+
+    <section id="portfolio" class="section portfolio" aria-labelledby="portfolio-heading">
+      <h2 id="portfolio-heading">Portfolio</h2>
+      <article class="project" id="proj-1">
+        <h3>Personal Website</h3>
+        <p>This site demonstrates semantic HTML and varied elements.</p>
+        <figure>
+          <img src="https://via.placeholder.com/320x180" alt="Project screenshot" width="320" height="180">
+          <figcaption>Site layout preview</figcaption>
+        </figure>
+        <p>Key features:</p>
+        <ul>
+          <li>Semantic structure (&lt;header&gt;, &lt;main&gt;, &lt;footer&gt;)</li>
+          <li>Form contact demo</li>
+        </ul>
+      </article>
+
+      <article class="project" id="proj-2">
+        <h3>Sample Form</h3>
+        <p>Small interactive form (no JavaScript required to view).</p>
+        <form id="demo-form" action="#" method="post" role="form" aria-label="Demo contact form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message" rows="4"></textarea>
+
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic">
+            <option value="general">General</option>
+            <option value="project">Project</option>
+            <option value="other">Other</option>
+          </select>
+
+          <button type="submit">Send</button>
+        </form>
+      </article>
+    </section>
+
+    <aside id="skills" class="section" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills &amp; Tools</h2>
+      <ol>
+        <li>HTML5</li>
+        <li>Semantic markup</li>
+        <li>Accessibility basics</li>
+      </ol>
+      <details>
+        <summary>More details</summary>
+        <p>Learning git, GitHub, and project workflows.</p>
+      </details>
+    </aside>
+
+    <section id="resume" class="section" aria-labelledby="resume-heading">
+      <h2 id="resume-heading">Resume (summary)</h2>
+      <table id="resume-table" summary="Summary of education and experience">
+        <thead>
+          <tr>
+            <th scope="col">Year</th>
+            <th scope="col">Role</th>
+            <th scope="col">Institution</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2026</td>
+            <td>Web Dev Student</td>
+            <td>Online Bootcamp</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Progress: <progress value="40" max="100">40%</progress></p>
+      <p>Confidence (meter): <meter value="0.6">60%</meter></p>
+      <blockquote cite="https://developer.mozilla.org/">
+        <p><strong>Learning by building</strong> is the best approach.</p>
+        <cite>— MDN</cite>
+      </blockquote>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <address>
+        <p>Email: <a href="mailto:haangomamwiinga@gmail.com">haangomamwiinga@gmail.com</a></p>
+        <p>Phone: <a href="tel:+260977155188">+260 977 155 188</a></p>
+      </address>
+
+      <form id="contact-form" action="#" method="post">
+        <label for="sin">SIN Number</label>
+        <input type="text" id="sin" name="sin" value="2211138203" aria-describedby="sin-help">
+        <small id="sin-help">Used here for assignment only.</small>
+
+        <label for="github">GitHub</label>
+        <input type="url" id="github" name="github" value="https://github.com/H-Mwiinga/My_Website_IWD.git">
+
+        <button type="submit" form="contact-form">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="site-footer">
+    <hr>
+    <p>Student: <strong>Haangoma Mwiinga</strong></p>
+    <p>GitHub: <a href="https://github.com/H-Mwiinga/My_Website_IWD.git" rel="noopener" target="_blank">My_Website_IWD</a></p>
+    <small>Generated for HTML assignment.</small>
+    <address>
+      <p>Contact: <a href="mailto:haangomamwiinga@gmail.com">Email me</a></p>
+    </address>
+  </footer>
+</body>
+</html>
